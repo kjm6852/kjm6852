@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+       <variable
+           name="mainVM"
+           type="com.cavss.socialmediaexmaple.ui.vm.main.MainVM" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/purple_500">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorAlpha_85percent"
+            android:id="@+id/menuBarContainer">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:id="@+id/logo"
+                android:src="@drawable/ic_launcher_background"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/image_loading"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/logo"
+                android:layout_marginStart="20dp"
+                android:background="@android:color/transparent"
+                android:overScrollMode="never"
+                android:id="@+id/menuBarView"/>
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/menuBarContainer"
+            android:layout_above="@id/dockView"
+            android:id="@+id/frameView_main"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAlpha_85percent"
+            android:id="@+id/dockView"/>
+    </RelativeLayout>
+</layout>

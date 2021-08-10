@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="clickListener"
+            type="com.cavss.socialmediaexmaple.ui.customs.recyclerview.IClickListener" />
+        <variable
+            name="dockModel"
+            type="com.cavss.socialmediaexmaple.ui.customs.dock.DockModel" />
+    </data>
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:onClick="@{() -> clickListener.onClick(0, dockModel)}"
+        android:src="@{dockModel.itemImage}"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/image_loading"/>
+</layout>

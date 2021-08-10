@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!-- 에디트텍스트가 포커스를 받았을때의 모양 및 색상 -->
+    <item
+        android:state_focused="true">
+        <shape
+            android:shape="rectangle">
+            <stroke
+                android:width="1dp"
+                android:color="@color/black" />
+            <corners
+                android:radius="5dp"/>
+            <solid
+                android:color="@color/white" />
+            <padding
+                android:left="5dp"
+                android:right="5dp"
+                android:top="5dp"
+                android:bottom="5dp"/>
+        </shape>
+    </item>
+
+
+    <item
+        android:state_focused="false">
+        <shape
+            android:shape="rectangle">
+            <stroke
+                android:width="1dp"
+                android:color="@color/purple_200" />
+            <corners
+                android:radius="5dp"/>
+            <solid
+                android:color="@color/white" />
+            <padding
+                android:left="5dp"
+                android:right="5dp"
+                android:top="5dp"
+                android:bottom="5dp"/>
+        </shape>
+    </item>
+</selector>
+

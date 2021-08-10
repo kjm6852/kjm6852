@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SocialMediaExmaple</string>
+    <string name="image_loading">Loading....</string>
+
+    <!-- Splash/Login -->
+    <string name="email_title">ID</string>
+    <string name="email_hint">아이디를 입력하세요</string>
+    <string name="password_title">Password</string>
+    <string name="password_hint">비밀번호를 입력하세요</string>
+    <string name="registerButton">계정이 없으신가요?</string>
+    <string name="searchButton">계정찾기</string>
+    <string name="loginButton">로그인</string>
+
+    <!-- Splash/Register -->
+    <string name="email_exist_already">이미 존재하는 아이디입니다.</string>
+    <string name="age_input">만 나이</string>
+    <string name="name_input">이름 나이</string>
+    <string name="success_register">회원가입하기</string>
+    <string name="back">뒤로가기</string>
+
+
+</resources>
